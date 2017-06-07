@@ -35,6 +35,9 @@
               			"module": "mtch",
               			"author": "Richeve S. Bebedor",
               			"eMail": "richeve.bebedor@gmail.com",
+              			"contributors": [
+              				"John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>"
+              			],
               			"repository": "https://github.com/volkovasystems/mtch.git",
               			"test": "mtch-test.js",
               			"global": true
