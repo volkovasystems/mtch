@@ -1,8 +1,28 @@
+<!DOCTYPE html>
 <html>
 	<head>
-		<script
-			type="application/javascript"
-			src="./mtch.deploy.js">
-		</script>
+		<title>mtch unit test</title>
+
+		<link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-2.3.2.css">
+
+		<script type="application/javascript" src="https://code.jquery.com/qunit/qunit-2.3.2.js"></script>
+
+		<script type="application/javascript" src="./mtch.deploy.js"></script>
 	</head>
+
+	<body>
+		<div id="qunit"></div>
+
+		<div id="qunit-fixture"></div>
+
+		<script type="application/javascript">
+			QUnit.test( "mtch unit test", function( assert ) {
+
+				assert.equal( mtch( "hello world", /hello/, 0 ), "hello", "should return 'hello'" );
+
+				assert.deepEqual( mtch( "hello world", /hello/ ), [ "hello" ], "should be deeply equal" );
+
+			} );
+		</script>
+	</body>
 </html>
