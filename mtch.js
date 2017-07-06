@@ -36,7 +36,8 @@
 			"author": "Richeve S. Bebedor",
 			"eMail": "richeve.bebedor@gmail.com",
 			"contributors": [
-				"John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>"
+				"John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>",
+				"Vinse Vinalon <vinsevinalon@gmail.com>"
 			],
 			"repository": "https://github.com/volkovasystems/mtch.git",
 			"test": "mtch-test.js",
@@ -57,7 +58,6 @@
 	@include:
 		{
 			"falzy": "falzy",
-			"protype": "protype",
 			"raze": "raze",
 			"stringe": "stringe",
 			"truly": "truly",
@@ -67,7 +67,6 @@
 */
 
 const falzy = require( "falzy" );
-const protype = require( "protype" );
 const raze = require( "raze" );
 const stringe = require( "stringe" );
 const truly = require( "truly" );
@@ -87,7 +86,7 @@ const mtch = function mtch( text, pattern, index ){
 		@end-meta-configuration
 	*/
 
-	if( protype( pattern, STRING ) ){
+	if( typeof pattern == "string" ){
 		pattern = new RegExp( pattern );
 	}
 
@@ -96,7 +95,7 @@ const mtch = function mtch( text, pattern, index ){
 		throw new Error( "invalid pattern" );
 	}
 
-	if( truly( index ) && !protype( index, NUMBER ) ){
+	if( truly( index ) && typeof index != "number" ){
 		throw new Error( "invalid index" );
 	}
 
