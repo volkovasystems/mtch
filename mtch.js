@@ -60,8 +60,7 @@
 			"falzy": "falzy",
 			"raze": "raze",
 			"stringe": "stringe",
-			"truly": "truly",
-			"wichevr": "wichevr"
+			"truly": "truly"
 		}
 	@end-include
 */
@@ -70,7 +69,8 @@ const falzy = require( "falzy" );
 const raze = require( "raze" );
 const stringe = require( "stringe" );
 const truly = require( "truly" );
-const wichevr = require( "wichevr" );
+
+const EMPTY_STRING = "";
 
 const mtch = function mtch( text, pattern, index ){
 	/*;
@@ -103,7 +103,7 @@ const mtch = function mtch( text, pattern, index ){
 
 	if( falzy( text ) ){
 		if( falzy( index ) ){
-			return "";
+			return EMPTY_STRING;
 		}
 
 		return [ ];
@@ -112,7 +112,7 @@ const mtch = function mtch( text, pattern, index ){
 	let result = raze( text.match( pattern ) );
 
 	if( truly( index ) ){
-		return wichevr( result[ index ], "" );
+		return result[ index ] || EMPTY_STRING;
 	}
 
 	return result;

@@ -60,8 +60,7 @@
               			"falzy": "falzy",
               			"raze": "raze",
               			"stringe": "stringe",
-              			"truly": "truly",
-              			"wichevr": "wichevr"
+              			"truly": "truly"
               		}
               	@end-include
               */
@@ -70,7 +69,8 @@ var falzy = require("falzy");
 var raze = require("raze");
 var stringe = require("stringe");
 var truly = require("truly");
-var wichevr = require("wichevr");
+
+var EMPTY_STRING = "";
 
 var mtch = function mtch(text, pattern, index) {
 	/*;
@@ -103,7 +103,7 @@ var mtch = function mtch(text, pattern, index) {
 
 	if (falzy(text)) {
 		if (falzy(index)) {
-			return "";
+			return EMPTY_STRING;
 		}
 
 		return [];
@@ -112,7 +112,7 @@ var mtch = function mtch(text, pattern, index) {
 	var result = raze(text.match(pattern));
 
 	if (truly(index)) {
-		return wichevr(result[index], "");
+		return result[index] || EMPTY_STRING;
 	}
 
 	return result;

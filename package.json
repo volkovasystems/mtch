@@ -1,6 +1,6 @@
 {
 	"name": "mtch",
-	"version": "0.5.0",
+	"version": "0.6.0",
 	"description": "Shorter string matching.",
 	"main": "mtch.js",
 	"support": "mtch.support.js",
@@ -40,8 +40,7 @@
 		"falzy": "^0.23.0",
 		"raze": "^0.34.0",
 		"stringe": "^0.5.0",
-		"truly": "^0.20.0",
-		"wichevr": "^0.14.0"
+		"truly": "^0.20.0"
 	},
 	"devDependencies": {
 		"babel-cli": "^6.24.1",
@@ -49,6 +48,6 @@
 		"babel-plugin-transform-runtime": "^6.23.0",
 		"babel-preset-latest": "^6.24.1",
 		"source-map-loader": "^0.2.1",
-		"webpack": "^3.3.0"
+		"webpack": "^3.4.0"
 	}
 }

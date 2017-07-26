@@ -4,7 +4,6 @@ falzy \
 raze \
 stringe \
 truly \
-wichevr \
 --save && \
 yarn add \
 babel-cli \
@@ -19,6 +18,5 @@ falzy \
 raze \
 stringe \
 truly \
-wichevr \
 --save \
 --force-latest
