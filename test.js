@@ -76,6 +76,7 @@ describe( "mtch", ( ) => {
 		} );
 	} );
 
+
 	describe( `"mtch( "hello world", /hello/ )"`, ( ) => {
 	it( "should be deeply equal", ( ) => {
 
@@ -83,7 +84,6 @@ describe( "mtch", ( ) => {
 
 		} );
 	} );
-	
 } );
 
 
