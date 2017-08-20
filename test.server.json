@@ -5,22 +5,22 @@
     "passes": 2,
     "pending": 0,
     "failures": 0,
-    "start": "2017-08-07T02:32:28.867Z",
-    "end": "2017-08-07T02:32:28.878Z",
+    "start": "2017-08-20T02:04:49.786Z",
+    "end": "2017-08-20T02:04:49.797Z",
     "duration": 11
   },
   "tests": [
     {
       "title": "should return 'hello'",
       "fullTitle": "mtch \"mtch( \"hello world\", /hello/, 0 )\" should return 'hello'",
-      "duration": 3,
+      "duration": 2,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "should be deeply equal",
       "fullTitle": "mtch \"mtch( \"hello world\", /hello/ )\" should be deeply equal",
-      "duration": 1,
+      "duration": 3,
       "currentRetry": 0,
       "err": {}
     }
@@ -31,14 +31,14 @@
     {
       "title": "should return 'hello'",
       "fullTitle": "mtch \"mtch( \"hello world\", /hello/, 0 )\" should return 'hello'",
-      "duration": 3,
+      "duration": 2,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "should be deeply equal",
       "fullTitle": "mtch \"mtch( \"hello world\", /hello/ )\" should be deeply equal",
-      "duration": 1,
+      "duration": 3,
       "currentRetry": 0,
       "err": {}
     }
