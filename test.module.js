@@ -70,6 +70,7 @@ const path = require( "path" );
 //: @end-bridge
 
 //: @server:
+
 describe( "mtch", ( ) => {
 
 	describe( "`mtch( 'hello world', /hello/, 0 )`", ( ) => {
@@ -91,15 +92,74 @@ describe( "mtch", ( ) => {
 
 } );
 
-
 //: @end-server
 
 
 //: @client:
 
+describe( "mtch", ( ) => {
+
+	describe( "`mtch( 'hello world', /hello/, 0 )`", ( ) => {
+		it( "should return 'hello'", ( ) => {
+
+			assert.equal( mtch( "hello world", /hello/, 0 ), "hello" );
+
+		} );
+	} );
+
+
+	describe( "`mtch( 'hello world', /hello/ )`", ( ) => {
+		it( "should be equal to [ 'hello' ]", ( ) => {
+
+			assert.deepEqual( mtch( "hello world", /hello/ ), [ "hello" ] );
+
+		} );
+	} );
+
+} );
 
 //: @end-client
 
 
 //: @bridge:
+
+describe( "mtch", ( ) => {
+
+	let bridgeURL = `file://${ path.resolve( __dirname, "bridge.html" ) }`;
+
+	describe( "`mtch( 'hello world', /hello/, 0 )`", ( ) => {
+		it( "should return 'hello'", ( ) => {
+
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+					return mtch( "hello world", /hello/, 0 );
+				}
+
+			).value;
+
+			assert.equal( result, "hello" );
+
+		} );
+	} );
+
+
+	describe( "`mtch( 'hello world', /hello/ )`", ( ) => {
+		it( "should be equal to [ 'hello' ]", ( ) => {
+
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+					return mtch( "hello world", /hello/ );
+				}
+
+			).value;
+
+			assert.deepEqual( result, [ "hello" ] );
+
+		} );
+	} );
+
+} );
+
 //: @end-bridge
