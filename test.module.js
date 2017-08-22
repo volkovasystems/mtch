@@ -146,16 +146,16 @@ describe( "mtch", ( ) => {
 
 	describe( "`mtch( 'hello world', /hello/ )`", ( ) => {
 		it( "should be equal to [ 'hello' ]", ( ) => {
-
+			//: @ignore:
 			let result = browser.url( bridgeURL ).execute(
 
 				function( ){
-					return mtch( "hello world", /hello/ );
+					return JSON.stringify( mtch( "hello world", /hello/ ) );
 				}
 
 			).value;
-
-			assert.deepEqual( result, [ "hello" ] );
+			//: @end-ignore
+			assert.deepEqual( JSON.parse( result ), [ "hello" ] );
 
 		} );
 	} );
