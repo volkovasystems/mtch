@@ -74,7 +74,7 @@ const path = require( "path" );
 describe( "mtch", ( ) => {
 
 	describe( "`mtch( 'hello world', /hello/, 0 )`", ( ) => {
-		it( "should return 'hello'", ( ) => {
+		it( "should be equal to 'hello'", ( ) => {
 
 			assert.equal( mtch( "hello world", /hello/, 0 ), "hello" );
 
@@ -100,7 +100,7 @@ describe( "mtch", ( ) => {
 describe( "mtch", ( ) => {
 
 	describe( "`mtch( 'hello world', /hello/, 0 )`", ( ) => {
-		it( "should return 'hello'", ( ) => {
+		it( "should be equal to 'hello'", ( ) => {
 
 			assert.equal( mtch( "hello world", /hello/, 0 ), "hello" );
 
@@ -128,7 +128,7 @@ describe( "mtch", ( ) => {
 	let bridgeURL = `file://${ path.resolve( __dirname, "bridge.html" ) }`;
 
 	describe( "`mtch( 'hello world', /hello/, 0 )`", ( ) => {
-		it( "should return 'hello'", ( ) => {
+		it( "should be equal to 'hello'", ( ) => {
 
 			let result = browser.url( bridgeURL ).execute(
 
