@@ -1,0 +1,116 @@
+{
+	"state": {
+		"passed": 2,
+		"failed": 0,
+		"skipped": 0
+	},
+	"start": "2017-08-22T04:29:52.435Z",
+	"end": "2017-08-22T04:30:33.289Z",
+	"capabilities": {
+		"browserName": "chrome",
+		"chromeOptions": {
+			"args": [
+				"disable-gpu",
+				"headless"
+			]
+		},
+		"proxy": null
+	},
+	"host": "127.0.0.1",
+	"port": 4444,
+	"baseUrl": "http://localhost",
+	"framework": "mocha",
+	"mochaOpts": {
+		"timeout": 10000,
+		"ui": "bdd"
+	},
+	"suites": [
+		{
+			"name": "mtch",
+			"duration": 0,
+			"start": "2017-08-22T04:30:32.753Z",
+			"tests": [],
+			"hooks": []
+		},
+		{
+			"name": "mtch",
+			"duration": 342,
+			"start": "2017-08-22T04:30:32.758Z",
+			"end": "2017-08-22T04:30:33.100Z",
+			"tests": [],
+			"hooks": [
+				{
+					"start": "2017-08-22T04:30:32.759Z",
+					"end": "2017-08-22T04:30:32.760Z",
+					"duration": 1,
+					"title": "\"before each\" hook",
+					"associatedSuite": "mtch",
+					"associatedTest": "should return 'hello'"
+				},
+				{
+					"start": "2017-08-22T04:30:33.053Z",
+					"end": "2017-08-22T04:30:33.053Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "mtch",
+					"associatedTest": "should return 'hello'"
+				},
+				{
+					"start": "2017-08-22T04:30:33.054Z",
+					"end": "2017-08-22T04:30:33.054Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "mtch",
+					"associatedTest": "should be equal to [ 'hello' ]"
+				},
+				{
+					"start": "2017-08-22T04:30:33.100Z",
+					"end": "2017-08-22T04:30:33.100Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "mtch",
+					"associatedTest": "should be equal to [ 'hello' ]"
+				},
+				{
+					"start": "2017-08-22T04:30:33.101Z",
+					"end": "2017-08-22T04:30:33.101Z",
+					"duration": 0,
+					"title": "\"after all\" hook",
+					"associatedSuite": "mtch"
+				}
+			]
+		},
+		{
+			"name": "`mtch( 'hello world', /hello/, 0 )`",
+			"duration": 296,
+			"start": "2017-08-22T04:30:32.758Z",
+			"end": "2017-08-22T04:30:33.054Z",
+			"tests": [
+				{
+					"name": "should return 'hello'",
+					"start": "2017-08-22T04:30:32.759Z",
+					"end": "2017-08-22T04:30:33.053Z",
+					"duration": 294,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		},
+		{
+			"name": "`mtch( 'hello world', /hello/ )`",
+			"duration": 46,
+			"start": "2017-08-22T04:30:33.054Z",
+			"end": "2017-08-22T04:30:33.100Z",
+			"tests": [
+				{
+					"name": "should be equal to [ 'hello' ]",
+					"start": "2017-08-22T04:30:33.054Z",
+					"end": "2017-08-22T04:30:33.100Z",
+					"duration": 46,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		}
+	]
+}

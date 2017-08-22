@@ -55,7 +55,7 @@
 	@end-include
 */
 
-const assert = require( "assert" );
+const assert = require( "should" );
 
 //: @server:
 const mtch = require( "./mtch.js" );
@@ -66,9 +66,10 @@ const mtch = require( "./mtch.js" );
 
 
 //: @server:
+
 describe( "mtch", ( ) => {
-	
-	describe( `"mtch( "hello world", /hello/, 0 )"`, ( ) => {
+
+	describe( "`mtch( 'hello world', /hello/, 0 )`", ( ) => {
 		it( "should return 'hello'", ( ) => {
 
 			assert.equal( mtch( "hello world", /hello/, 0 ), "hello" );
@@ -77,18 +78,17 @@ describe( "mtch", ( ) => {
 	} );
 
 
-	describe( `"mtch( "hello world", /hello/ )"`, ( ) => {
-	it( "should be deeply equal", ( ) => {
+	describe( "`mtch( 'hello world', /hello/ )`", ( ) => {
+		it( "should be equal to [ 'hello' ]", ( ) => {
 
 			assert.deepEqual( mtch( "hello world", /hello/ ), [ "hello" ] );
 
 		} );
 	} );
+
 } );
 
-
 //: @end-server
-
 
 
 
