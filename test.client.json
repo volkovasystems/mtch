@@ -4,8 +4,8 @@
 		"failed": 0,
 		"skipped": 0
 	},
-	"start": "2017-08-22T04:29:52.435Z",
-	"end": "2017-08-22T04:30:33.289Z",
+	"start": "2017-08-22T04:34:17.908Z",
+	"end": "2017-08-22T04:34:55.815Z",
 	"capabilities": {
 		"browserName": "chrome",
 		"chromeOptions": {
@@ -28,52 +28,52 @@
 		{
 			"name": "mtch",
 			"duration": 0,
-			"start": "2017-08-22T04:30:32.753Z",
+			"start": "2017-08-22T04:34:55.504Z",
 			"tests": [],
 			"hooks": []
 		},
 		{
 			"name": "mtch",
-			"duration": 342,
-			"start": "2017-08-22T04:30:32.758Z",
-			"end": "2017-08-22T04:30:33.100Z",
+			"duration": 133,
+			"start": "2017-08-22T04:34:55.505Z",
+			"end": "2017-08-22T04:34:55.638Z",
 			"tests": [],
 			"hooks": [
 				{
-					"start": "2017-08-22T04:30:32.759Z",
-					"end": "2017-08-22T04:30:32.760Z",
-					"duration": 1,
+					"start": "2017-08-22T04:34:55.506Z",
+					"end": "2017-08-22T04:34:55.506Z",
+					"duration": 0,
 					"title": "\"before each\" hook",
 					"associatedSuite": "mtch",
-					"associatedTest": "should return 'hello'"
+					"associatedTest": "should be equal to 'hello'"
 				},
 				{
-					"start": "2017-08-22T04:30:33.053Z",
-					"end": "2017-08-22T04:30:33.053Z",
+					"start": "2017-08-22T04:34:55.593Z",
+					"end": "2017-08-22T04:34:55.593Z",
 					"duration": 0,
 					"title": "\"after each\" hook",
 					"associatedSuite": "mtch",
-					"associatedTest": "should return 'hello'"
+					"associatedTest": "should be equal to 'hello'"
 				},
 				{
-					"start": "2017-08-22T04:30:33.054Z",
-					"end": "2017-08-22T04:30:33.054Z",
+					"start": "2017-08-22T04:34:55.594Z",
+					"end": "2017-08-22T04:34:55.594Z",
 					"duration": 0,
 					"title": "\"before each\" hook",
 					"associatedSuite": "mtch",
 					"associatedTest": "should be equal to [ 'hello' ]"
 				},
 				{
-					"start": "2017-08-22T04:30:33.100Z",
-					"end": "2017-08-22T04:30:33.100Z",
+					"start": "2017-08-22T04:34:55.638Z",
+					"end": "2017-08-22T04:34:55.638Z",
 					"duration": 0,
 					"title": "\"after each\" hook",
 					"associatedSuite": "mtch",
 					"associatedTest": "should be equal to [ 'hello' ]"
 				},
 				{
-					"start": "2017-08-22T04:30:33.101Z",
-					"end": "2017-08-22T04:30:33.101Z",
+					"start": "2017-08-22T04:34:55.639Z",
+					"end": "2017-08-22T04:34:55.639Z",
 					"duration": 0,
 					"title": "\"after all\" hook",
 					"associatedSuite": "mtch"
@@ -82,15 +82,15 @@
 		},
 		{
 			"name": "`mtch( 'hello world', /hello/, 0 )`",
-			"duration": 296,
-			"start": "2017-08-22T04:30:32.758Z",
-			"end": "2017-08-22T04:30:33.054Z",
+			"duration": 89,
+			"start": "2017-08-22T04:34:55.505Z",
+			"end": "2017-08-22T04:34:55.594Z",
 			"tests": [
 				{
-					"name": "should return 'hello'",
-					"start": "2017-08-22T04:30:32.759Z",
-					"end": "2017-08-22T04:30:33.053Z",
-					"duration": 294,
+					"name": "should be equal to 'hello'",
+					"start": "2017-08-22T04:34:55.506Z",
+					"end": "2017-08-22T04:34:55.593Z",
+					"duration": 87,
 					"state": "pass"
 				}
 			],
@@ -98,15 +98,15 @@
 		},
 		{
 			"name": "`mtch( 'hello world', /hello/ )`",
-			"duration": 46,
-			"start": "2017-08-22T04:30:33.054Z",
-			"end": "2017-08-22T04:30:33.100Z",
+			"duration": 44,
+			"start": "2017-08-22T04:34:55.594Z",
+			"end": "2017-08-22T04:34:55.638Z",
 			"tests": [
 				{
 					"name": "should be equal to [ 'hello' ]",
-					"start": "2017-08-22T04:30:33.054Z",
-					"end": "2017-08-22T04:30:33.100Z",
-					"duration": 46,
+					"start": "2017-08-22T04:34:55.594Z",
+					"end": "2017-08-22T04:34:55.638Z",
+					"duration": 44,
 					"state": "pass"
 				}
 			],

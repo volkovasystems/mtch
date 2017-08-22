@@ -70,7 +70,7 @@ const mtch = require( "./mtch.js" );
 describe( "mtch", ( ) => {
 
 	describe( "`mtch( 'hello world', /hello/, 0 )`", ( ) => {
-		it( "should return 'hello'", ( ) => {
+		it( "should be equal to 'hello'", ( ) => {
 
 			assert.equal( mtch( "hello world", /hello/, 0 ), "hello" );
 
